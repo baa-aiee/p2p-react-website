@@ -10,10 +10,10 @@ import DailyQuestionForm from './Components/dailyQuestionForm'
 
 const App = () => (
   <div>
+    <TopNavBar />
     <div className="Home">
-             <TopNavBar />
-          <div className = "flex-x1-nowrap row">
-          <div className="col-xl-2 col-md-3 col-12 SideNav-SidePanel-module--cls2--1PH6H SideNav-SidePanel-module--cls1--34IFY d-flex flex-column">
+          <div className = "flex-x2-nowrap row">
+          <div className="SideNav-SidePanel-module--cls2--1PH6H ">
                <div className = "left-frame">
                  Left Layout
                </div>
@@ -22,6 +22,7 @@ const App = () => (
           <div className='right-frame'>
             <Switch>
               <Route exact path="/" component={Home} />
+              <Route exact path="/home" component={Home} />
               <Route exact path="/about" component={About} />
               <Route exact path="/registrationForm" component={RegistrationForm} />
               <Route exact path="/dailyQuestionForm" component={DailyQuestionForm} />
